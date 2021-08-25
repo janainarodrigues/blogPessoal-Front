@@ -1,0 +1,8 @@
+/* foto da pagina do entrar */
+#img-bg {
+background-image: url('https://imgur.com/48Dty6X.jpg');
+min-height: 695px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
