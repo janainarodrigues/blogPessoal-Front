@@ -1,0 +1,9 @@
+/*Tamanho da letra 16 igual do excel no nome do usuário */
+.fs-16 {
+  font-size: 16pt;  
+}
+
+/*toda tak a ter cursor ex:no sair */
+a {
+   cursor: pointer ; 
+}
