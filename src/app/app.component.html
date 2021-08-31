@@ -1,2 +1,6 @@
- <!--caminho da para rota funcionar-->
-<router-outlet></router-outlet>
+<!--caminho menu funcionar-->
+<app-menu *ngIf='auth.logado()'></app-menu>
+<!--caminho da para rota funcionar-->
+ <router-outlet></router-outlet>
+
+ <app-rodape *ngIf='auth.logado()'></app-rodape>

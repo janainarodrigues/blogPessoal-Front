@@ -34,8 +34,15 @@ export class CadastrarComponent implements OnInit {
 
   cadastrar(){
     this.user.tipo = this.tipoUsuario
+    if(this.user.nome.length < 5){
+      alert("Preencha o campo pelo menos com no mínimo de 5 caracteres")
+    }
+    if(this.user.usuario.indexOf ('@') == -1 ||this.user.usuario.indexOf ('.') == -1) {
+      alert("Preencha o campo @ e também ter .com")
+    }
+
     if(this.user.senha.length < 8){
-      alert("Minimo de 8 caracteres")
+      alert("A senha precisa ter no mínimo 8 caracteres")
     }
     if (this.user.senha != this.confirmarSenha) {
       alert('A senhas digitadas estão incorretas.')

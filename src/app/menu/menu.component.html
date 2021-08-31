@@ -9,12 +9,12 @@
         <ul class="navbar-nav mr-auto d-flex align-items-center">
             <li class="nav-item active">
                 <!--foto da imagem com tamanho e classe reponsiva a qualquer tela e foto em formato de ciruclo-->
-                <img src="https://imgur.com/FoQ3tOB.jpg" alt="Imagem do user" width="50px" height="50px"
+                <img src="{{foto}}" alt="Imagem do user" width="50px" height="50px"
                     class="img-fluid rounded-circle">
             </li>
             <li class="nav-item pl-3">
                 <!--nome em negrito-->
-                <p class="m-0 font-weight-bold text-white fs-16"> Nome do usuário </p>
+                <p class="m-0 font-weight-bold text-white fs-16"> {{nome}} </p>
             </li>
             <li class="nav-item pl-3">
                 <!--icone clicavel-->
@@ -28,7 +28,7 @@
         <ul class="navbar-nav ml-auto d-flex align-items-center">
             <li class="nav-item pl-3">
                 <!--nome em negrito-->
-                <a class="m-0 font-weight-bold text-white fs-16"> Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16"> Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
